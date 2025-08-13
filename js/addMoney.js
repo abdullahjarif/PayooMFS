@@ -9,7 +9,7 @@ document.getElementById('addMoney_btn').addEventListener("click", function(event
 
     const pinNumber = document.getElementById('input_pin').value;
 
-    if(pinNumber === '1122'){
+    if(pinNumber === '1234'){
         console.log("add money button clicked");
         const accountBalance = document.getElementById('account_balance').innerText;
         const accountBalanceNumber = parseFloat(accountBalance);
