@@ -27,8 +27,8 @@
                                     <div class="stat-value">$</div>
                                     <div id="account_balance" class="stat-value">45000</div>
                                 </div>
-                                
-                                <div class="stat-desc text-center">Available Balance</div>
+
+                                <div class="stat-desc text-center mt-4 font-bold">Available Balance</div>
                             </div>
                         </div>
                     </div>
@@ -36,14 +36,14 @@
                     <div class="divider"></div>
 
                     <div>
-                        <button class="btn">Add Money</button>
-                        <button class="btn">Cashout</button>
+                        <button id="btn_show_addMoney" class="btn">Add Money</button>
+                        <button id="btn_show_cashOut" class="btn">Cashout</button>
                     </div>
 
                     <div class="divider"></div>
 
                     <!-- add money form start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="addMoney_form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -52,7 +52,7 @@
                                 <input id="inputAdd_money" type="text" placeholder="Add Amount to withdraw"
                                     class="input input-bordered" required />
                             </div>
-                            
+
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">4 Digit Pin</span>
@@ -67,6 +67,34 @@
                         </form>
                     </div>
                     <!-- add money form end -->
+
+                    <!-- cashout form end -->
+                    <div id="cashOut_form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="money_lebel">Amount to Add</span>
+                                </label>
+                                <input id="input_cashout" type="text" placeholder="Cash Out Amount"
+                                    class="input input-bordered" required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">4 Digit Pin</span>
+                                </label>
+                                <input id="cashOut_Pin" type="password" placeholder="Enter 4 Digit Pin"
+                                    class="input input-bordered" autocomplete="off" required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="cashout_btn" class="btn btn-primary">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- cashout form end -->
+
                 </div>
             </div>
         </div>
@@ -74,6 +102,8 @@
 
     <!-- <script src="./js/home.js"></script> -->
     <script src="./js/addMoney.js"></script>
+    <script src="./js/cashout.js"></script>
+    <script src="./js/features.js"></script>
 
 </body>
 
