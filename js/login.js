@@ -43,12 +43,10 @@ document.getElementById('login_Btn').addEventListener("click", function(event){
     // unethical way to validate
     if(phoneNum.value === '5' && pinNum.value === '1234'){
         console.log('You are logged in');
-        window.location.href = 'home.html'
+        window.location.href = 'home.html';
         
     }else{
         alert("Wrong Credential");
     }
-    
-    
-    
+
 });
